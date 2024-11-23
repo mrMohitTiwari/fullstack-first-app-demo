@@ -25,10 +25,11 @@ const jokes = [
   },
 ];
 // creating a route by get to send jokes on joke route
-app.get("/jokes", (req, res) => {
+app.get("/api/jokes", (req, res) => {
   res.send(jokes);
 });
 // listen from the server
 app.listen(port, () => {
   console.log(`server running at http://localhost:${port}`);
 });
+// we will see in standar practice that api follows certain way like url/api/routeName
